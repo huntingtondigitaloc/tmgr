@@ -45,6 +45,7 @@ Table of contents
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 
 /* ===================================
     02. Reset
@@ -355,8 +356,9 @@ h6 {
   line-height: 95px;
 }
 .title-extra-large {
-  font-size: 130px;
-  line-height: 120px;
+  font-size: 100px;
+  line-height: 90px;
+  font-family: "Patua One", cursive;
 }
 
 /* text color */
@@ -7911,7 +7913,7 @@ header a.logo {
   vertical-align: middle;
 }
 header a.logo img {
-  max-height: 26px;
+  max-height: 75px;
 }
 header .left-nav .sidebar-part1 a.logo img {
   max-height: inherit;
@@ -8276,7 +8278,7 @@ header {
   top: 0;
 }
 .navbar-fixed-top {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   right: 0;
   left: 0;
@@ -9036,7 +9038,6 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggler {
 /* header style two */
 .header-with-topbar .navbar-top,
 .header-with-topbar .navbar-fixed-top {
-  top: 34px;
   background: #fff;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
 }
@@ -10873,6 +10874,123 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {
 }
 .scroll-down-section div {
   height: 100px;
+}
+
+/* modal */
+#landing-modal {
+  /* max-width: unset; */
+  height: auto;
+  /* width: 65vw; */
+  z-index: 1001;
+}
+
+#landing-modal a.close-modal {
+  top: 2.5px;
+  right: 2.5px;
+}
+
+.landing-modal-img {
+  width: 100%;
+}
+
+.modal-btn-container {
+  padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+#landing-modal .gold-btn {
+  border: solid 1px rgb(237 195 83) !important;
+  background-color: rgb(237 195 83);
+}
+
+/* LOADING */
+
+.loading {
+  position: fixed;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  visibility: visible;
+  -webkit-transition: 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  -o-transition: 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  transition: 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  z-index: 101;
+  width: 100px;
+  height: 100px;
+}
+
+.loading:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid #111517;
+  border-left-color: white;
+  -webkit-animation: 1.2s loading-anim cubic-bezier(0.77, 0, 0.175, 1) infinite
+    both;
+  animation: 1.2s loading-anim cubic-bezier(0.77, 0, 0.175, 1) infinite both;
+  border-radius: 50%;
+  display: block;
+}
+
+.logo-loading {
+  width: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes loading-anim {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-anim {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* 3.3. Add class after preloader */
+body.in {
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+.loader.in:before {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  visibility: hidden;
+}
+
+.loader.out:after {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: visible;
+}
+
+body.in .loading {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* ===================================

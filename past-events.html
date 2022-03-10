@@ -52,198 +52,173 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
   </head>
 
-  <body class="left-nav-sidebar">
+  <body>
+    <div class="loading">
+      <img
+        src="images/logo/footer-logo-white.png"
+        class="logo-loading"
+        alt="spinner"
+      />
+    </div>
+
     <!-- start header -->
-    <header>
-      <div class="left-nav">
-        <!-- start logo -->
-        <div class="sidebar-part1">
-          <a href="index.html" title="TMGR" class="logo"
-            ><img
-              src="images/logo/logo-icon-fill.png"
-              data-at2x="images/logo/logo-icon-fill@2x.png"
-              alt="TMGR"
-          /></a>
-        </div>
-        <!-- end logo -->
-        <div class="sidebar-part2">
-          <div class="sidebar-middle">
-            <div class="sidebar-middle-menu alt-font font-weight-600">
-              <nav class="navbar bootsnav navbar-expand-lg alt-font">
-                <div
-                  id="navbar-menu"
-                  class="collapse navbar-collapse no-padding"
-                >
-                  <ul class="nav navbar-nav margin-80px-bottom">
+    <header class="header-with-topbar fixed-topbar">
+      <!-- start navigation -->
+      <nav
+        class="navbar navbar-default bootsnav navbar-fixed-top header-light-transparent background-transparent navbar-expand-lg"
+      >
+        <div class="container-lg nav-header-container">
+          <!-- start logo -->
+          <div class="col-auto ps-0">
+            <a href="index.html" title="TMGR" class="logo"
+              ><img
+                src="images/logo/logo-icon-fill-black.png"
+                data-at2x="images/logo/logo-icon-fill-black@2x.png"
+                class="logo-dark default"
+                alt="TMGR" /><img
+                src="images/logo/logo-icon-fill.png"
+                data-at2x="images/logo/logo-icon-fill@2x.png"
+                alt="TMGR"
+                class="logo-light"
+            /></a>
+          </div>
+          <!-- end logo -->
+          <div class="col accordion-menu pe-0 pe-md-3">
+            <button
+              type="button"
+              class="navbar-toggler collapsed"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar-collapse-toggle-1"
+            >
+              <span class="sr-only">toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div
+              class="navbar-collapse collapse justify-content-end"
+              id="navbar-collapse-toggle-1"
+            >
+              <ul
+                id="accordion"
+                class="nav navbar-nav navbar-left no-margin alt-font text-normal"
+                data-in="animate__fadeIn"
+                data-out="animate__fadeOut"
+              >
+                <!-- start menu item -->
+                <li class="dropdown">
+                  <a href="index.html">Home</a>
+                </li>
+                <!-- end menu item -->
+                <li class="dropdown simple-dropdown">
+                  <a
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    aria-hidden="true"
+                    >About</a
+                  ><i
+                    class="fas fa-angle-down dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-hidden="true"
+                  ></i>
+                  <!-- start sub menu -->
+                  <ul class="dropdown-menu" role="menu">
                     <li class="dropdown">
-                      <a href="index.html" title="Home">Home</a>
+                      <a href="mission-statement.html" title="Mission Statement"
+                        >TMGR Mission Statement</a
+                      >
                     </li>
                     <li class="dropdown">
-                      <a
-                        data-bs-toggle="dropdown"
-                        href="javascript:void(0);"
-                        title="Pages"
-                        >About <i class="fas fa-angle-right"></i
-                      ></a>
-                      <ul class="dropdown-menu second-level">
-                        <li class="dropdown">
-                          <a
-                            href="mission-statement.html"
-                            title="Mission Statement"
-                            data-bs-toggle="dropdown"
-                            >TMGR Mission Statement
-                          </a>
-                        </li>
-                        <li class="dropdown">
-                          <a
-                            href="officers.html"
-                            title="Officers"
-                            data-bs-toggle="dropdown"
-                            >Officers
-                          </a>
-                        </li>
-                        <li class="dropdown">
-                          <a
-                            href="join-renew-tmgr.html"
-                            title="Join/Renew TMGR"
-                            data-bs-toggle="dropdown"
-                            >Join/Renew TMGR
-                          </a>
-                        </li>
-                        <li class="dropdown">
-                          <a
-                            href="faq.html"
-                            title="FAQ"
-                            data-bs-toggle="dropdown"
-                            >FAQ
-                          </a>
-                        </li>
-                        <li class="dropdown">
-                          <a
-                            href="meeting-minutes.html"
-                            title="Meeting Minutes"
-                            data-bs-toggle="dropdown"
-                            >Meeting Minutes
-                          </a>
-                        </li>
-                      </ul>
+                      <a href="officers.html" title="Officers">Officers </a>
                     </li>
-
                     <li class="dropdown">
-                      <a
-                        data-bs-toggle="dropdown"
-                        href="javascript:void(0);"
-                        title="Events"
-                        >Events <i class="fas fa-angle-right"></i
-                      ></a>
-                      <ul class="dropdown-menu second-level">
-                        <li class="dropdown">
-                          <a
-                            href="event-calendar.html"
-                            title="Event Calendar"
-                            data-bs-toggle="dropdown"
-                            >Event Calendar
-                          </a>
-                        </li>
-                        <li class="dropdown">
-                          <a
-                            href="ongoing-events.html"
-                            title="Ongoing Events"
-                            data-bs-toggle="dropdown"
-                            >Ongoing Events
-                          </a>
-                        </li>
-                        <li class="dropdown">
-                          <a
-                            href="past-events.html"
-                            title="Past Events"
-                            data-bs-toggle="dropdown"
-                            >Past Events
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="dropdown">
-                      <a
-                        data-bs-toggle="dropdown"
-                        href="javascript:void(0);"
-                        title="Ads"
-                        >Ads <i class="fas fa-angle-right"></i
-                      ></a>
-                      <ul class="dropdown-menu second-level">
-                        <li class="dropdown">
-                          <a
-                            class="dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            href="ads.html"
-                            >View Ads
-                          </a>
-                        </li>
-                        <li class="dropdown">
-                          <a
-                            class="dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                            href="submit-ads.html"
-                            >Submit An Ad</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="dropdown">
-                      <a
-                        data-bs-toggle="dropdown"
-                        href="spotlight.html"
-                        title="Spotlight"
-                        >Spotlight
+                      <a href="join-renew-tmgr.html" title="Membership"
+                        >Membership
                       </a>
                     </li>
-
                     <li class="dropdown">
-                      <a
-                        data-bs-toggle="dropdown"
-                        href="supporters.html"
-                        title="Supporters"
-                        >Supporters
-                      </a>
+                      <a href="faq.html" title="FAQ">FAQ </a>
                     </li>
-
                     <li class="dropdown">
-                      <a
-                        data-bs-toggle="dropdown"
-                        href="https://mgtexas.itemorder.com/shop/sale/"
-                        title="Regalia"
-                        >Regalia
+                      <a href="meeting-minutes.html" title="Meeting Minutes"
+                        >Meeting Minutes
                       </a>
-                    </li>
-                    <li>
-                      <div class="side-left-menu-close close-side"></div>
                     </li>
                   </ul>
-                </div>
-              </nav>
-              <div class="right-bg">
-                <img src="" alt="" />
-              </div>
+                </li>
+                <li class="dropdown simple-dropdown">
+                  <a
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    aria-hidden="true"
+                    >Events</a
+                  ><i
+                    class="fas fa-angle-down dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-hidden="true"
+                  ></i>
+                  <!-- start sub menu -->
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown">
+                      <a href="event-calendar.html" title="Event Calendar"
+                        >Event Calendar</a
+                      >
+                    </li>
+                    <li class="dropdown">
+                      <a href="ongoing-events.html" title="Ongoing Events"
+                        >Ongoing Events
+                      </a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="past-events.html" title="Past Events"
+                        >Past Events
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown simple-dropdown">
+                  <a
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    aria-hidden="true"
+                    >Ads</a
+                  ><i
+                    class="fas fa-angle-down dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-hidden="true"
+                  ></i>
+                  <!-- start sub menu -->
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown">
+                      <a href="ads.html" title="View Ads">View Ads</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="submit-ads.html" title="Submit An Ad"
+                        >Submit An Ad
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="spotlight.html" title="Spotlight">Spotlight</a>
+                </li>
+                <li class="dropdown">
+                  <a href="supporters.html" title="Supporters">Supporters</a>
+                </li>
+                <li class="dropdown">
+                  <a
+                    href="https://mgtexas.itemorder.com/shop/sale/"
+                    title="Regalia"
+                    target="_blank"
+                    >Regalia</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="sidebar-part3">
-          <div class="bottom-menu-icon">
-            <a
-              href="javascript:void(0);"
-              class="right-menu-button text-extra-dark-gray nav-icon"
-              id="showRightPush"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
-          </div>
-        </div>
-      </div>
+      </nav>
+      <!-- end navigation -->
     </header>
     <!-- end header -->
 
@@ -725,10 +700,31 @@
             <div
               class="col-lg-3 col-md-3 text-center text-medium text-md-start"
             >
-              <h6 class="text-deep-red">Events</h6>
-              <a href="event-calendar.html">Event Calendar</a> <br />
-              <a href="ongoing-events.html">Ongoing Events</a> <br />
-              <a href="past-events.html">Past Events</a> <br /><br />
+              <div
+                class="icon-social-very-small d-inline-block line-height-normal"
+              >
+                <a
+                  href="https://www.instagram.com/txmgr"
+                  title="Instagram"
+                  target="_blank"
+                  class="text-link-white-2"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/"
+                  title="Facebook"
+                  target="_blank"
+                  class="text-link-white-2"
+                  ><i class="fab fa-facebook-f" aria-hidden="true"></i
+                ></a>
+                <a
+                  href="https://twitter.com/"
+                  title="Twitter"
+                  target="_blank"
+                  class="text-link-white-2"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
             </div>
             <!-- end social media -->
           </div>

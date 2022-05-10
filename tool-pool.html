@@ -34,10 +34,6 @@
     <link rel="stylesheet" type="text/css" href="css/bootsnav.css" />
     <link rel="stylesheet" type="text/css" href="css/font-icons.min.css" />
     <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
-    />
     <!-- revolution slider -->
     <link
       rel="stylesheet"
@@ -55,6 +51,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
   </head>
+
   <body>
     <div class="loading">
       <img
@@ -63,33 +60,6 @@
         alt="spinner"
       />
     </div>
-    <!-- loading start -->
-    <!-- <div class="loading">
-        <img
-          class="logo-loading"
-          src="images/logo/footer-logo-white.png"
-          alt="TMGR logo white circle"
-        />
-      </div> -->
-    <!-- loading end -->
-
-    <!-- MODAL ON PAGELOAD -->
-    <!-- <div id="landing-modal" class="modal">
-      <a href="#" rel="modal:close">Close</a>
-      <img
-        src="images/pages/events/2022-spring-gof/Spring 2022 GoF Event.jpg"
-        alt="TMGR Spring 2022 GoF Event"
-        class="landing-modal-img"
-      />
-      <div class="modal-btn-container">
-        <a
-          href="events/2022-spring-gof.html"
-          class="btn btn-black btn-rounded btn-medium sm-margin-two-all"
-          >Learn More Here!</a
-        >
-      </div>
-    </div> -->
-    <!-- END MODAL -->
 
     <!-- start header -->
     <header class="header-with-topbar fixed-topbar">
@@ -137,7 +107,7 @@
               >
                 <!-- start menu item -->
                 <!-- <li class="dropdown">
-                  <a href="#">Home</a>
+                  <a href="index.html">Home</a>
                 </li> -->
                 <!-- end menu item -->
                 <li class="dropdown simple-dropdown">
@@ -255,280 +225,32 @@
     </header>
     <!-- end header -->
 
-    <!-- start slider -->
-    <section class="wow animate__fadeIn p-0 main-slider mobile-height">
-      <div
-        class="swiper-full-screen swiper-container w-100 white-move"
-        data-slider-options='{ "loop": true, "slidesPerView": "1", "allowTouchMove":true, "autoplay": { "delay": 5000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "pagination": { "el": ".swiper-pagination", "clickable": true } }'
-      >
-        <div class="swiper-wrapper">
-          <!-- start slider item -->
-          <div
-            class="swiper-slide cover-background"
-            style="background-image: url('images/homepage/car-1.jpg')"
-          >
-            <div class="opacity-extra-medium bg-extra-dark-gray"></div>
-            <div
-              class="container position-relative one-fourth-screen sm-h-400px"
-            >
-              <div class="row h-100">
-                <div
-                  class="col-12 d-flex flex-column justify-content-center text-center"
-                >
-                  <h1
-                    class="title-extra-large text-uppercase text-white-2 w-75 sm-w-95 mx-auto margin-35px-bottom sm-margin-15px-bottom"
-                  >
-                    The Texas MG Register
-                  </h1>
-                  <span
-                    class="text-large text-very-light-gray font-weight-300 w-95 mx-auto margin-25px-bottom d-block sm-margin-15px-bottom"
-                    >We're all about enjoying MG’s and the down to earth folks
-                    that own them</span
-                  >
-                  <div class="btn-dual">
-                    <a
-                      href="mission-statement.html"
-                      class="btn btn-white btn-medium sm-margin-two-all"
-                      >About Us</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end slider item -->
-          <!-- start slider item -->
-          <div
-            class="swiper-slide cover-background"
-            style="background-image: url('images/homepage/car-2.jpg')"
-          >
-            <div class="opacity-extra-medium bg-extra-dark-gray"></div>
-            <div
-              class="container position-relative one-fourth-screen sm-h-400px"
-            >
-              <div class="row h-100">
-                <div
-                  class="col-12 d-flex flex-column justify-content-center text-center"
-                >
-                  <h1
-                    class="title-extra-large text-uppercase text-white-2 w-75 sm-w-95 mx-auto margin-35px-bottom sm-margin-15px-bottom"
-                  >
-                    Join the family
-                  </h1>
-                  <span
-                    class="text-large text-very-light-gray font-weight-300 w-95 mx-auto margin-25px-bottom d-block sm-margin-15px-bottom"
-                    >TMGR members embrace that friendly Texas spirit and welcome
-                    you.</span
-                  >
-                  <div class="btn-dual">
-                    <a
-                      href="join-renew-tmgr.html"
-                      class="btn btn-white btn-medium sm-margin-two-all"
-                      >Join Now</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end slider item -->
-          <!-- start slider item -->
-          <div
-            class="swiper-slide cover-background"
-            style="background-image: url('images/homepage/car-3.jpg')"
-          >
-            <div class="opacity-extra-medium bg-extra-dark-gray"></div>
-            <div
-              class="container position-relative one-fourth-screen sm-h-400px"
-            >
-              <div class="row h-100">
-                <div
-                  class="col-12 d-flex flex-column justify-content-center text-center"
-                >
-                  <h1
-                    class="title-extra-large text-uppercase text-white-2 w-75 sm-w-95 mx-auto margin-35px-bottom sm-margin-15px-bottom"
-                  >
-                    Our friendly supporters
-                  </h1>
-                  <span
-                    class="text-large text-very-light-gray font-weight-300 w-95 mx-auto margin-25px-bottom d-block sm-margin-15px-bottom"
-                    >Come help us support our supporters!</span
-                  >
-                  <div class="btn-dual">
-                    <a
-                      href="supporters.html"
-                      class="btn btn-white btn-medium sm-margin-two-all"
-                      >Supporters</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end slider item -->
-        </div>
-        <!-- start slider pagination -->
-        <div class="swiper-pagination swiper-pagination-white"></div>
-        <!-- end slider pagination -->
-        <!-- start slider navigation -->
-        <!-- <div class="swiper-button-next light"><i class="ti-angle-right"></i></div>
-              <div class="swiper-button-prev light"><i class="ti-angle-left"></i></div> -->
-        <!-- end slider navigation -->
-      </div>
-    </section>
-    <!-- end slider -->
-
-    <!-- start section -->
-    <section class="wow animate__fadeIn bg-extra-dark-gray">
+    <section id="down-section" class="wow animate__fadeIn">
       <div class="container">
-        <div class="row align-items-center">
-          <div
-            class="col-12 col-xl-3 col-sm-6 text-center xs-margin-15px-bottom wow animate__fadeIn"
-          >
-            <img
-              src="images/homepage/homepage-mission-2.jpg"
-              alt=""
-              class="w-100"
-            />
-          </div>
-          <div
-            class="col-12 col-xl-3 col-sm-6 text-center wow animate__fadeIn"
-            data-wow-delay="0.2s"
-          >
-            <img
-              src="images/homepage/homepage-mission-1.jpg"
-              alt=""
-              class="w-100"
-            />
-          </div>
-          <div
-            class="col-12 col-xl-6 p-0 lg-margin-five-top text-center text-lg-start sm-no-margin-top wow animate__fadeIn"
-            data-wow-delay="0.4s"
-          >
+        <div class="row justify-content-center">
+
             <div
-              class="padding-twelve-lr lg-padding-15px-lr sm-padding-five-lr sm-padding-ten-top w-100"
-            >
-              <h4
-                class="font-weight-600 alt-font text-deep-red letter-spacing-minus-1"
-              >
-                Our Mission
-              </h4>
-              <p>
-                <li>
-                  To further the general enjoyment of our hobby and promote
-                  awareness of the marque.
-                </li>
-                <li>
-                  To promote, organize, and supervise outings, meetings, shows,
-                  events, and Gatherings of the Faithful.
-                </li>
-                <li>
-                  To help our fellow enthusiasts with technical and
-                  non-technical challenges with their vehicles.
-                </li>
-                <li>
-                  To build fellowship and new friendships through activities
-                  with or without our cars.
-                </li>
-                <li>
-                  To foster working relationships with local MG clubs through
-                  collaboration and cross-promotion.
-                </li>
-                <li>
-                  To promote collaboration with all national and international
-                  MG organizations.
-                </li>
-              </p>
-              <a
-                href="mission-statement.html"
-                class="btn btn-small btn-light-gray"
-                >Read More Here</a
-              >
-            </div>
+            class="col-12 page-title-medium text-left d-flex flex-column justify-content-center"
+          >
+            <!-- start page title -->
+            <h1 class="alt-font text-danger font-weight-600 m-0">
+              TMGR Tool Pool
+            </h1>
+            <!-- end page title -->
+          </div>
+        </div>
+
+        <br><br>
+        
+          <div class="col-12 col-lg-10">
+            <p class="text-medium line-height-28 sm-line-height-26">
+                <img src="/images/pages/tool-pool/TMGR Tool Pool rev 2022-05-10.jpg">
+
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- end section -->
-    <!-- start features box section -->
-    <section class="bg-very-dark-gray">
-      <div class="container">
-        <div
-          class="col-12 page-title-medium text-center d-flex flex-column justify-content-center"
-        >
-          <!-- start sub title -->
-          <span class="d-block margin-10px-top alt-font"
-            >COME OUT AND CELEBRATE WITH US</span
-          >
-          <!-- end sub title -->
-          <!-- start page title -->
-          <h1 class="alt-font text-deep-red font-weight-600 m-0">
-            Featured Upcoming Events
-          </h1>
-          <!-- end page title -->
-        </div>
-
-        <br />
-        <hr />
-        <br />
-
-        <div
-          class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 justify-content-center"
-        >
-          <!-- start process step item -->
-          <div
-            class="col text-center feature-box-11 position-relative md-margin-eight-bottom sm-margin-ten-bottom wow animate__fadeInRight last-paragraph-no-margin"
-            data-wow-delay="0.4s"
-          >
-            <a
-              href="https://tmgr.org/event-calendar.html#calendar-d64ac75f-c6b2-43f2-af8a-b6f0f55249ca"
-              class="alt-font margin-30px-top margin-5px-bottom text-deep-red font-weight-600"
-            >
-              May Natter
-            </a>
-            <p class="w-75 lg-w-95 md-w-80 mx-auto">May 28, 2022</p>
-          </div>
-          <!-- end process step item -->
-          <!-- start process step item -->
-          <!-- <div
-            class="col text-center feature-box-11 position-relative xs-margin-ten-bottom wow animate__fadeInRight last-paragraph-no-margin"
-            data-wow-delay="0.8s"
-          >
-            <a
-              href=""
-              class="alt-font margin-30px-top margin-5px-bottom text-very-light-gray font-weight-600"
-            >
-              Tech Session Detailing
-            </a>
-            <p class="w-75 lg-w-95 md-w-80 mx-auto">March 12, 2022</p>
-          </div> -->
-          <!-- end process step item -->
-          <!-- start process step item -->
-          <!-- <div
-            class="col text-center feature-box-11 position-relative xs-margin-ten-bottom wow animate__fadeInRight last-paragraph-no-margin"
-            data-wow-delay="0.8s"
-          >
-            <a
-              href=""
-              class="alt-font margin-30px-top margin-5px-bottom text-very-light-gray font-weight-600"
-            >
-              Silly Chilly Willie Rally
-            </a>
-            <p class="w-75 lg-w-95 md-w-80 mx-auto">March 19, 2022</p>
-          </div> -->
-          <!-- end process step item -->
-        </div>
-
-        <br /><br />
-
-        <div class="text-center wow animate__fadeInRight">
-          <a href="event-calendar.html" class="btn btn-small btn-light-gray"
-            >More Events</a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- end feature box section -->
 
     <section class="wow animate__fadeIn bg-extra-dark-gray">
       <div
@@ -652,8 +374,6 @@
     <script type="text/javascript" src="js/jquery.nav.js"></script>
     <script type="text/javascript" src="js/hamburger-menu.js"></script>
     <script type="text/javascript" src="js/theme-vendors.min.js"></script>
-    <!-- MODAL LIBRARY -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <!-- revolution -->
     <script
       type="text/javascript"
@@ -674,7 +394,6 @@
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>-->
     <!-- setting -->
-    <script src="./js/modal.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
